@@ -26,9 +26,9 @@ jobs:
       run: |
        cd src
        javac -cp . Main.java
-       javac -cp . classTeste.java
+       javac -cp . ClassTeste.java
      
     - name: exec
       run: |
        cd src
-       java ./classTeste
+       java ./ClassTeste.java

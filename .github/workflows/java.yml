@@ -31,4 +31,4 @@ jobs:
     - name: exec
       run: |
        cd src
-       java ./ClassTeste.java
+       java -cp . ClassTeste

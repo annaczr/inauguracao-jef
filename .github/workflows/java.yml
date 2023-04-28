@@ -30,4 +30,4 @@ jobs:
     - name: exec
       run: |
        cd src
-       java classTeste
+       java ./classTeste

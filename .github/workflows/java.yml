@@ -23,7 +23,10 @@ jobs:
         distribution: 'temurin'
         
     - name: build
-      run: javac -cp src src/Main.java
+      run: |
+       cd src
+       javac -cp . Main.java
+       javac -cp . ClassTeste.java
      
     - name: exec
       run: |

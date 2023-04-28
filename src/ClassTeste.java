@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class classTeste {
+public class ClassTeste {
     public static void main (String[] args) {
         ArrayList<Colaborador> colabs= new ArrayList<Colaborador>();
 

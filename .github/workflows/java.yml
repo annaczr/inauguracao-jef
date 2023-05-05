@@ -32,3 +32,14 @@ jobs:
       run: |
        cd src
        java -cp . ClassTeste
+       
+    - uses: mr-smithers-excellent/docker-build-push@v6
+      name: Build & push Docker image
+      with:
+        image: annaczr/inauguracao-jef
+        tags: v1, latest
+        registry: Docker.io
+        dockerfile: Dockerfile.ci
+        username: ${{secrets.DOCKER_USER}}
+        password: ${{secrets.DOCKER_PASSWORD}}
+   

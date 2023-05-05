@@ -37,9 +37,9 @@ jobs:
       name: Build & push Docker image
       with:
         image: annaczr/inauguracao-jef
-        tags: v1, latest
-        registry: Docker.io
-        dockerfile: Dockerfile.ci
+        tags: 1.0, 1.1
+        registry: docker.io
+        dockerfile: dockerfile
         username: ${{secrets.DOCKER_USER}}
         password: ${{secrets.DOCKER_PASSWORD}}
    
